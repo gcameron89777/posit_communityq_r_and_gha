@@ -1,8 +1,6 @@
 setwd(here::here("dev", "R"))
 
-library(tidyverse)
-library(opendatatoronto)
-library(janitor)
+pacman::p_load(tidyverse, opendatatoronto, janitor, here)
 
 get_shelter_data <- function(year = 2024) {
        
